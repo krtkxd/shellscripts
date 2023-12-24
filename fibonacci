@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "How many terms of  fibonacci series you want to print"
+read n
+y=0
+z=1
+echo "The $n terms of fibonacci series are"
+
+for((i=1;i<n;i++))
+do
+  echo -n "$y "
+  y=$((y+z))
+  z=$((y-z))
+done
+echo "
